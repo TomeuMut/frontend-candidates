@@ -78,7 +78,7 @@ Mandatory:
 Optional:
 - [x] Use Jest for testing (and create tests)
 - [x] Use your own design and leave it as much beautiful as you can
-- 
+
 Demo:
 https://frontend-exercise.remoteo.io/
 
