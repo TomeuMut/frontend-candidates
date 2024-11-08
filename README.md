@@ -69,6 +69,16 @@ Create a weather app that shows the current weather in a city of your choice. Yo
 - Exercise: Group hours into three visibility ranges: low (<5 km), medium (5-10 km), and high (>10 km). Display in the UI how many hours fall into each visibility range.
 - Objective: Assess how you handle grouping data into categories.
 
+Mandatory:
+- [x] Use Nuxt.js
+- [x] Use tailwind for styling
+- [x] Use TypeScript
+- [x] Responsive design
+
+Optional:
+- [x] Use Jest for testing (and create tests)
+- [x] Use your own design and leave it as much beautiful as you can
+- 
 Demo:
 https://frontend-exercise.remoteo.io/
 
