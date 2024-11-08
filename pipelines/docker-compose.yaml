@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  web:
+    image: ${IMAGE}
+    container_name: ${PROJECT_KEY}
+    restart: always
+    ports:
+      - ${PROD_01_PRIVATE_IP}:${PORT}:80
+    networks:
+      - offugo
+
+networks:
+  offugo:
+    name: offugo-net
