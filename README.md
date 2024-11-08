@@ -71,6 +71,9 @@ Create a weather app that shows the current weather in a city of your choice. Yo
 
 Demo:
 https://frontend-exercise.remoteo.io/
+
+Sources:
+- https://api.weatherapi.com/v1/forecast.json?key=bac548c0946b45a9afd213913240411&q=London&days=1&aqi=no&alerts=no
     
 ## Clone
 
