@@ -1,26 +1,22 @@
 <template>
-  <div class="container mx-auto py-28 px-6 md:px-0">
-    <h1 class="text-4xl font-serif">Weather Data Exercises</h1>
-    <button
-      class="bg-primary-default p-2 text-white rounded-md border-2 border-primary-default hover:bg-white hover:text-primary-default transition-all duration-300 ease-in-out"
-      @click="fetchWeather"
-    >
-      Load Weather Data
-    </button>
-    <div v-if="weather" class="grid md:grid-cols-3 grid-cols-1 gap-6 py-4">
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">
+  <div class="c-weather">
+    <h1>Weather Data Exercises</h1>
+    <button class="c-btn" @click="fetchWeather">Load Weather Data</button>
+    <div v-if="weather" class="c-weather__grid">
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">
           1. Daily Maximum and minimum Temperatures
         </div>
         <div v-for="hour in tempHours" :key="hour.id" class="text-base">
           <div>
-            {{ hour.time }} / {{ hour.temp_c }} /
-            {{ hour.feelslike_c }}
+            {{ hour.time }} / {{ hour.temp_c }}ºC /
+
+            {{ hour.feelslike_c }}ºC
           </div>
         </div>
       </div>
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">
           2. Hours With Specific Weather conditions
         </div>
         <div v-for="hour in tempHours" :key="hour.id">
@@ -29,17 +25,17 @@
               hour.condition.text === 'Clear' || hour.condition.text === 'Sunny'
             "
           >
-            {{ hour.time }} / {{ hour.temp_c }} /
+            {{ hour.time }} / {{ hour.temp_c }}ºC /
             {{ hour.condition.text }}
           </div>
         </div>
       </div>
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">3. Daily Average Humidity</div>
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">3. Daily Average Humidity</div>
         <div class="">Average Humidity {{ getDailyHumidity(tempHours) }}%</div>
       </div>
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">4. Hours with High Wind Speed</div>
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">4. Hours with High Wind Speed</div>
         <div v-for="wind in getHighWindSpeed(tempHours)" :key="wind.id">
           <div v-if="wind.wind_mph > 7">
             {{ wind.time }} / {{ wind.wind_mph }} mph / Wind Direction:
@@ -47,12 +43,12 @@
           </div>
         </div>
       </div>
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">5. Highest UV Index of the Day</div>
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">5. Highest UV Index of the Day</div>
         <div class="">{{ getHighUv(tempHours) }}</div>
       </div>
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">
           6. Morning and Afternoon Temperatures
         </div>
         <div class="">
@@ -62,8 +58,8 @@
           Average Afternoon Temp: {{ getAfternoonTemp(tempHours) }}ºC
         </div>
       </div>
-      <div class="border border-primary-default p-2 rounded-md">
-        <div class="text-xl font-bold">
+      <div class="c-weather__item">
+        <div class="c-weather__item--title">
           7. Morning and Afternoon Temperatures
         </div>
         <div class="">
