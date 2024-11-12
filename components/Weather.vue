@@ -119,7 +119,7 @@ export default {
       hours.forEach((element) => {
         average += element.humidity / hours.length
       })
-      average = average.toFixed(2)
+      average = parseFloat(average.toFixed(2))
       return average
     },
     getHighWindSpeed(hours: WeatherItems[]): WeatherItems[] {
@@ -152,7 +152,7 @@ export default {
         }
       })
       average = average / i
-      return average.toFixed(2)
+      return parseFloat(average.toFixed(2))
     },
     getAfternoonTemp(hours: WeatherItems[]): number {
       let date: Date
@@ -168,7 +168,7 @@ export default {
         }
       })
       average = average / i
-      return average.toFixed(2)
+      return parseFloat(average.toFixed(2))
     },
     getLowVisibility(hours: WeatherItems[]): string {
       let i = 0
