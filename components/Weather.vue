@@ -22,7 +22,8 @@
         <div v-for="hour in tempHours" :key="hour.id">
           <div
             v-if="
-              hour.condition.text === 'Clear' || hour.condition.text === 'Sunny'
+              hour.condition.text.trim() === 'Clear' ||
+              hour.condition.text.trim() === 'Sunny'
             "
           >
             {{ hour.time }} / {{ hour.temp_c }}ºC /
