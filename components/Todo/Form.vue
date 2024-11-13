@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form class="flex" @submit.prevent="addTodo">
+    <form class="c-form" @submit.prevent="addTodo">
       <input
         v-model="todoName"
         class="c-input__text"

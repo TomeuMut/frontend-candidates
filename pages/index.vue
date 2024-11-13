@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <div class="py-7">
+      <div class="c-page__head py-7">
         <h1>
           <i class="fa fa-clipboard-list" />
           Nuxt JS Todo
