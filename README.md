@@ -6,6 +6,8 @@
 
 Create a todo list manager example like the one in
 
+_In this exercise the "problem" i found is in the modal, i need to restructure all components for modal confirm_
+
 Mandatory:
 - [x] Use Nuxt.js
 - [x] Use Vuex
@@ -27,6 +29,8 @@ Optional:
 # Exercise 2
 
 Create a weather app that shows the current weather in a city of your choice. You must need to include all this exercises:
+
+_In this exercise i have stucked in number 6 i need a write in a paper for 24h and PM or AM_
 
 ### Daily Maximum and Minimum Temperatures:
 
@@ -84,7 +88,10 @@ https://frontend-exercise.remoteo.io/
 
 Sources:
 - https://api.weatherapi.com/v1/forecast.json?key=bac548c0946b45a9afd213913240411&q=London&days=1&aqi=no&alerts=no
-    
+
+_In General the hardest task in this exercises is write in typscrit and view any types get typescript_ 
+_I use google,youtube for search help_
+
 ## Clone
 
 ```bash
