@@ -1,0 +1,5 @@
+.c-input{
+  &__text{
+    @apply border-2 border-primary-default p-2 w-full  rounded-md rounded-r-none hover:bg-slate-300 hover:cursor-pointer transition-all ease-in-out duration-300;
+  }
+}

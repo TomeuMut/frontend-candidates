@@ -1,6 +1,15 @@
 
 @import "./components.btn";
 @import "./components.weather";
+@import "./components.modal";
+@import "./components.input";
+@import "./components.list";
+@import "./components.page";
+@import "./components.form";
 h1{
   @apply text-4xl font-serif;
 }
+h2{
+  @apply text-2xl font-serif text-gray-500;
+}
+
