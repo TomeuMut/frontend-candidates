@@ -29,7 +29,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@fortawesome/fontawesome-free/css/all.css'],
+  css: ['@fortawesome/fontawesome-free/css/all.css', '~/assets/scss/main.scss'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -47,6 +47,7 @@ export default {
     '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
